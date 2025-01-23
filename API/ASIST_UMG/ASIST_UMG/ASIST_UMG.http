@@ -1,0 +1,6 @@
+@ASIST_UMG_HostAddress = http://localhost:5120
+
+GET {{ASIST_UMG_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

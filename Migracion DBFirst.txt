@@ -1,0 +1,5 @@
+LA primera migración sí funciona
+Scaffold-DbContext "Host=127.0.01;Database=postgres;Port=5432;Username=postgres;Password=Des@rrollo2024;" Npgsql.EntityFrameworkCore.PostgreSQL -f -o Models 
+
+Scaffold-DbContext "host=Server;Database=postgres;Port=5432;UserId=postgres;Password=Gu@temalan2025++;" Npgsql.EntityFrameworkCore.PostgreSQL -o Model
+dotnet ef dbcontext scaffold "host=Server;Database=postgres;Port=5432;UserId=postgres;Password=Gu@temalan2025++;" Npgsql.EntityFrameworkCore.PostgreSQL -o Model

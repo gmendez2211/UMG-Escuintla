@@ -1,7 +1,36 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Gustavo Mendez\\Documents\\GitHub\\UMG-Escuintla\\API\\ASIST_UMG_api\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE8A766-C861-4192-BB30-306D8457CF31}|ASIST_UMG_api\\ASIST_UMG_api.csproj|c:\\users\\gustavo mendez\\documents\\github\\umg-escuintla\\api\\asist_umg_api\\asist_umg_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE8A766-C861-4192-BB30-306D8457CF31}|ASIST_UMG_api\\ASIST_UMG_api.csproj|solutionrelative:asist_umg_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE8A766-C861-4192-BB30-306D8457CF31}|ASIST_UMG_api\\ASIST_UMG_api.csproj|c:\\users\\gustavo mendez\\documents\\github\\umg-escuintla\\api\\asist_umg_api\\asist_umg_api\\controllers\\marcajescontroller\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE8A766-C861-4192-BB30-306D8457CF31}|ASIST_UMG_api\\ASIST_UMG_api.csproj|solutionrelative:asist_umg_api\\controllers\\marcajescontroller\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE8A766-C861-4192-BB30-306D8457CF31}|ASIST_UMG_api\\ASIST_UMG_api.csproj|c:\\users\\gustavo mendez\\documents\\github\\umg-escuintla\\api\\asist_umg_api\\asist_umg_api\\repository\\interfaces\\ipersonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE8A766-C861-4192-BB30-306D8457CF31}|ASIST_UMG_api\\ASIST_UMG_api.csproj|solutionrelative:asist_umg_api\\repository\\interfaces\\ipersonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE8A766-C861-4192-BB30-306D8457CF31}|ASIST_UMG_api\\ASIST_UMG_api.csproj|c:\\users\\gustavo mendez\\documents\\github\\umg-escuintla\\api\\asist_umg_api\\asist_umg_api\\repository\\personarepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE8A766-C861-4192-BB30-306D8457CF31}|ASIST_UMG_api\\ASIST_UMG_api.csproj|solutionrelative:asist_umg_api\\repository\\personarepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE8A766-C861-4192-BB30-306D8457CF31}|ASIST_UMG_api\\ASIST_UMG_api.csproj|c:\\users\\gustavo mendez\\documents\\github\\umg-escuintla\\api\\asist_umg_api\\asist_umg_api\\repository\\interfaces\\isedescentros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE8A766-C861-4192-BB30-306D8457CF31}|ASIST_UMG_api\\ASIST_UMG_api.csproj|solutionrelative:asist_umg_api\\repository\\interfaces\\isedescentros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE8A766-C861-4192-BB30-306D8457CF31}|ASIST_UMG_api\\ASIST_UMG_api.csproj|c:\\users\\gustavo mendez\\documents\\github\\umg-escuintla\\api\\asist_umg_api\\asist_umg_api\\repository\\csedescentrosrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE8A766-C861-4192-BB30-306D8457CF31}|ASIST_UMG_api\\ASIST_UMG_api.csproj|solutionrelative:asist_umg_api\\repository\\csedescentrosrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE8A766-C861-4192-BB30-306D8457CF31}|ASIST_UMG_api\\ASIST_UMG_api.csproj|c:\\users\\gustavo mendez\\documents\\github\\umg-escuintla\\api\\asist_umg_api\\asist_umg_api\\models\\sedecentro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE8A766-C861-4192-BB30-306D8457CF31}|ASIST_UMG_api\\ASIST_UMG_api.csproj|solutionrelative:asist_umg_api\\models\\sedecentro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,15 +38,106 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Gustavo Mendez\\Documents\\GitHub\\UMG-Escuintla\\API\\ASIST_UMG_api\\ASIST_UMG_api\\Program.cs",
+              "RelativeDocumentMoniker": "ASIST_UMG_api\\Program.cs",
+              "ToolTip": "C:\\Users\\Gustavo Mendez\\Documents\\GitHub\\UMG-Escuintla\\API\\ASIST_UMG_api\\ASIST_UMG_api\\Program.cs",
+              "RelativeToolTip": "ASIST_UMG_api\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T22:15:37.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "iPersonas.cs",
+              "DocumentMoniker": "C:\\Users\\Gustavo Mendez\\Documents\\GitHub\\UMG-Escuintla\\API\\ASIST_UMG_api\\ASIST_UMG_api\\Repository\\Interfaces\\iPersonas.cs",
+              "RelativeDocumentMoniker": "ASIST_UMG_api\\Repository\\Interfaces\\iPersonas.cs",
+              "ToolTip": "C:\\Users\\Gustavo Mendez\\Documents\\GitHub\\UMG-Escuintla\\API\\ASIST_UMG_api\\ASIST_UMG_api\\Repository\\Interfaces\\iPersonas.cs",
+              "RelativeToolTip": "ASIST_UMG_api\\Repository\\Interfaces\\iPersonas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T21:37:47.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SedeCentro.cs",
+              "DocumentMoniker": "C:\\Users\\Gustavo Mendez\\Documents\\GitHub\\UMG-Escuintla\\API\\ASIST_UMG_api\\ASIST_UMG_api\\Models\\SedeCentro.cs",
+              "RelativeDocumentMoniker": "ASIST_UMG_api\\Models\\SedeCentro.cs",
+              "ToolTip": "C:\\Users\\Gustavo Mendez\\Documents\\GitHub\\UMG-Escuintla\\API\\ASIST_UMG_api\\ASIST_UMG_api\\Models\\SedeCentro.cs",
+              "RelativeToolTip": "ASIST_UMG_api\\Models\\SedeCentro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T05:49:01.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "iSedesCentros.cs",
+              "DocumentMoniker": "C:\\Users\\Gustavo Mendez\\Documents\\GitHub\\UMG-Escuintla\\API\\ASIST_UMG_api\\ASIST_UMG_api\\Repository\\Interfaces\\iSedesCentros.cs",
+              "RelativeDocumentMoniker": "ASIST_UMG_api\\Repository\\Interfaces\\iSedesCentros.cs",
+              "ToolTip": "C:\\Users\\Gustavo Mendez\\Documents\\GitHub\\UMG-Escuintla\\API\\ASIST_UMG_api\\ASIST_UMG_api\\Repository\\Interfaces\\iSedesCentros.cs",
+              "RelativeToolTip": "ASIST_UMG_api\\Repository\\Interfaces\\iSedesCentros.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T05:25:11.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "cSedesCentrosRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Gustavo Mendez\\Documents\\GitHub\\UMG-Escuintla\\API\\ASIST_UMG_api\\ASIST_UMG_api\\Repository\\cSedesCentrosRepo.cs",
+              "RelativeDocumentMoniker": "ASIST_UMG_api\\Repository\\cSedesCentrosRepo.cs",
+              "ToolTip": "C:\\Users\\Gustavo Mendez\\Documents\\GitHub\\UMG-Escuintla\\API\\ASIST_UMG_api\\ASIST_UMG_api\\Repository\\cSedesCentrosRepo.cs",
+              "RelativeToolTip": "ASIST_UMG_api\\Repository\\cSedesCentrosRepo.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAowB4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T05:25:05.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PersonaRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Gustavo Mendez\\Documents\\GitHub\\UMG-Escuintla\\API\\ASIST_UMG_api\\ASIST_UMG_api\\Repository\\PersonaRepo.cs",
+              "RelativeDocumentMoniker": "ASIST_UMG_api\\Repository\\PersonaRepo.cs",
+              "ToolTip": "C:\\Users\\Gustavo Mendez\\Documents\\GitHub\\UMG-Escuintla\\API\\ASIST_UMG_api\\ASIST_UMG_api\\Repository\\PersonaRepo.cs",
+              "RelativeToolTip": "ASIST_UMG_api\\Repository\\PersonaRepo.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAywCEAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T05:04:53.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PersonaController.cs",
+              "DocumentMoniker": "C:\\Users\\Gustavo Mendez\\Documents\\GitHub\\UMG-Escuintla\\API\\ASIST_UMG_api\\ASIST_UMG_api\\Controllers\\MarcajesController\\PersonaController.cs",
+              "RelativeDocumentMoniker": "ASIST_UMG_api\\Controllers\\MarcajesController\\PersonaController.cs",
+              "ToolTip": "C:\\Users\\Gustavo Mendez\\Documents\\GitHub\\UMG-Escuintla\\API\\ASIST_UMG_api\\ASIST_UMG_api\\Controllers\\MarcajesController\\PersonaController.cs",
+              "RelativeToolTip": "ASIST_UMG_api\\Controllers\\MarcajesController\\PersonaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T05:02:05.242Z",
+              "EditorCaption": ""
             }
           ]
         }

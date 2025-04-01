@@ -15,8 +15,6 @@ public class cRegistroPersonaDto
 
     public string? Telefono { get; set; }
 
-    public string? CorreoElectronico { get; set; }
-
     public DateOnly? FechaNacimiento { get; set; }
 
     public string? SegundoApellido { get; set; }
@@ -27,9 +25,11 @@ public class cRegistroPersonaDto
 
     public string? PrimerNombre { get; set; }
 
-    public int IdLogin { get; set; }
+    public string CorreoElectronico { get; set; } = null!;
 
-    
 
-   
+
+
+
+
 }

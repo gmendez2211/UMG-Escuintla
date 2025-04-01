@@ -15,8 +15,6 @@ public partial class Persona
 
     public string? Telefono { get; set; }
 
-    public string? CorreoElectronico { get; set; }
-
     public DateOnly? FechaNacimiento { get; set; }
 
     public string? SegundoApellido { get; set; }
@@ -27,15 +25,15 @@ public partial class Persona
 
     public string? PrimerNombre { get; set; }
 
-    public int IdLogin { get; set; }
+    public string CorreoElectronico { get; set; } = null!;
 
     public virtual ICollection<Administrativo> Administrativos { get; set; } = new List<Administrativo>();
+
+    public virtual Login CorreoElectronicoNavigation { get; set; } = null!;
 
     public virtual ICollection<Dispositivo> Dispositivos { get; set; } = new List<Dispositivo>();
 
     public virtual ICollection<Estudiante> Estudiantes { get; set; } = new List<Estudiante>();
-
-    public virtual Login IdLoginNavigation { get; set; } = null!;
 
     public virtual SedeCentro IdSedeCentroNavigation { get; set; } = null!;
 

@@ -133,7 +133,6 @@ C:\Users\Gustavo Mendez\Documents\GitHub\UMG-Escuintla\API\ASIST_UMG_api\ASIST_U
 C:\Users\Gustavo Mendez\Documents\GitHub\UMG-Escuintla\API\ASIST_UMG_api\ASIST_UMG_api\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ASIST_UMG_api.props
 C:\Users\Gustavo Mendez\Documents\GitHub\UMG-Escuintla\API\ASIST_UMG_api\ASIST_UMG_api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ASIST_UMG_api.props
 C:\Users\Gustavo Mendez\Documents\GitHub\UMG-Escuintla\API\ASIST_UMG_api\ASIST_UMG_api\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\Gustavo Mendez\Documents\GitHub\UMG-Escuintla\API\ASIST_UMG_api\ASIST_UMG_api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Gustavo Mendez\Documents\GitHub\UMG-Escuintla\API\ASIST_UMG_api\ASIST_UMG_api\obj\Debug\net8.0\ASIST_UM.B128E1AB.Up2Date
 C:\Users\Gustavo Mendez\Documents\GitHub\UMG-Escuintla\API\ASIST_UMG_api\ASIST_UMG_api\obj\Debug\net8.0\ASIST_UMG_api.dll
 C:\Users\Gustavo Mendez\Documents\GitHub\UMG-Escuintla\API\ASIST_UMG_api\ASIST_UMG_api\obj\Debug\net8.0\refint\ASIST_UMG_api.dll
@@ -141,3 +140,5 @@ C:\Users\Gustavo Mendez\Documents\GitHub\UMG-Escuintla\API\ASIST_UMG_api\ASIST_U
 C:\Users\Gustavo Mendez\Documents\GitHub\UMG-Escuintla\API\ASIST_UMG_api\ASIST_UMG_api\obj\Debug\net8.0\ASIST_UMG_api.genruntimeconfig.cache
 C:\Users\Gustavo Mendez\Documents\GitHub\UMG-Escuintla\API\ASIST_UMG_api\ASIST_UMG_api\obj\Debug\net8.0\ref\ASIST_UMG_api.dll
 C:\Users\Gustavo Mendez\Documents\GitHub\UMG-Escuintla\API\ASIST_UMG_api\ASIST_UMG_api\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+C:\Users\Gustavo Mendez\Documents\GitHub\UMG-Escuintla\API\ASIST_UMG_api\ASIST_UMG_api\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
+C:\Users\Gustavo Mendez\Documents\GitHub\UMG-Escuintla\API\ASIST_UMG_api\ASIST_UMG_api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

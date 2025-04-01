@@ -1,8 +1,172 @@
 [
   {
-    "ContainingType": "ASIST_UMG_api.Controllers.MarcajesController.PersonaController",
+    "ContainingType": "ASIST_UMG_api.Controllers.v1.CursosController",
+    "Method": "UpdateCatalogo",
+    "RelativePath": "api/v1/Cursos/ActualizaNombreCurso",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "actualizaCursoDto",
+        "Type": "ASIST_UMG_api.Models.DTOs.cursos.cActualizaCursoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ASIST_UMG_api.Models.DTOs.cursos.cActualizaCursoDto, ASIST_UMG_api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      }
+    ]
+  },
+  {
+    "ContainingType": "ASIST_UMG_api.Controllers.v1.CursosController",
+    "Method": "Cursos",
+    "RelativePath": "api/v1/Cursos/cursos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registroCursosDto",
+        "Type": "ASIST_UMG_api.Models.DTOs.cursos.cRegistroCursoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      }
+    ]
+  },
+  {
+    "ContainingType": "ASIST_UMG_api.Controllers.v1.CursosController",
+    "Method": "listadoSedesCentros",
+    "RelativePath": "api/v1/Cursos/DetalleCursos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ASIST_UMG_api.Models.DTOs.cursos.cDetalleCursosDto, ASIST_UMG_api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      }
+    ]
+  },
+  {
+    "ContainingType": "ASIST_UMG_api.Controllers.v1.MarcajeController",
+    "Method": "Marcaje",
+    "RelativePath": "api/v1/Marcaje/marcaje",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registroMarcajeDto",
+        "Type": "ASIST_UMG_api.Models.DTOs.cRegistroMarcajeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      }
+    ]
+  },
+  {
+    "ContainingType": "ASIST_UMG_api.Controllers.v1.PersonaController",
     "Method": "ReportePeresonasPorSedeCentros",
-    "RelativePath": "api/v{version}/Persona/{idCentro}",
+    "RelativePath": "api/v1/Persona/{idCentro}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -10,11 +174,6 @@
       {
         "Name": "idCentro",
         "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "version",
-        "Type": "",
         "IsRequired": true
       }
     ],
@@ -46,9 +205,9 @@
     "EndpointName": "ReportePersonasPorSede"
   },
   {
-    "ContainingType": "ASIST_UMG_api.Controllers.MarcajesController.PersonaController",
+    "ContainingType": "ASIST_UMG_api.Controllers.v1.PersonaController",
     "Method": "Persona",
-    "RelativePath": "api/v{version}/Persona/personas",
+    "RelativePath": "api/v1/Persona/personas",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -56,11 +215,6 @@
       {
         "Name": "registroPersonaDto",
         "Type": "ASIST_UMG_api.Models.DTOs.personas.cRegistroPersonaDto",
-        "IsRequired": true
-      },
-      {
-        "Name": "version",
-        "Type": "",
         "IsRequired": true
       }
     ],
@@ -100,19 +254,13 @@
     ]
   },
   {
-    "ContainingType": "ASIST_UMG_api.Controllers.MarcajesController.PersonaController",
+    "ContainingType": "ASIST_UMG_api.Controllers.v1.PersonaController",
     "Method": "ReportePeresonas",
-    "RelativePath": "api/v{version}/Persona/ReportePersonas",
+    "RelativePath": "api/v1/Persona/ReportePersonas",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "version",
-        "Type": "",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[ASIST_UMG_api.Models.DTOs.personas.cReportePersonasDto, ASIST_UMG_api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
@@ -140,9 +288,9 @@
     ]
   },
   {
-    "ContainingType": "ASIST_UMG_api.Controllers.MarcajesController.SedesCentrosController",
+    "ContainingType": "ASIST_UMG_api.Controllers.v1.SedesCentrosController",
     "Method": "listadoSedesCentros",
-    "RelativePath": "DetalleSedes",
+    "RelativePath": "api/v1/SedesCentros/DetalleSedes",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -163,53 +311,20 @@
         "StatusCode": 500
       },
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "StatusCode": 401
       }
     ]
   },
   {
-    "ContainingType": "ASIST_UMG_api.Controllers.MarcajesController.MarcajeController",
-    "Method": "Marcaje",
-    "RelativePath": "marcaje",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "registroMarcajeDto",
-        "Type": "ASIST_UMG_api.Models.DTOs.cRegistroMarcajeDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 201
-      },
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 400
-      },
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 500
-      },
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 401
-      }
-    ]
-  },
-  {
-    "ContainingType": "ASIST_UMG_api.Controllers.MarcajesController.SedesCentrosController",
+    "ContainingType": "ASIST_UMG_api.Controllers.v1.SedesCentrosController",
     "Method": "SedesCentros",
-    "RelativePath": "sedes",
+    "RelativePath": "api/v1/SedesCentros/sedes",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -227,8 +342,12 @@
         "StatusCode": 201
       },
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "StatusCode": 400
       },
       {
@@ -237,8 +356,12 @@
         "StatusCode": 500
       },
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "StatusCode": 401
       }
     ]

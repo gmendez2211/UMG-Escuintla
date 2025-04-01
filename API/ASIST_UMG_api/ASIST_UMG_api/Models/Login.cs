@@ -5,7 +5,9 @@ namespace ASIST_UMG_api.Models;
 
 public partial class Login
 {
-    public int IdLogin { get; set; }
+    public int? IdLogin { get; set; }
+
+    public string CorreoElectronico { get; set; } = null!;
 
     public bool? EstadoUsuario { get; set; }
 

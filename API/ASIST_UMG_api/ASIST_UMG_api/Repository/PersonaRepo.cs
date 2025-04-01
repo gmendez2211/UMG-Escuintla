@@ -22,7 +22,7 @@ namespace ASIST_UMG_api.Repository
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error al registrar persona", ex.ToString());
+               Console.WriteLine("Error al registrar persona", ex.ToString());
                 return false;
             }
         }

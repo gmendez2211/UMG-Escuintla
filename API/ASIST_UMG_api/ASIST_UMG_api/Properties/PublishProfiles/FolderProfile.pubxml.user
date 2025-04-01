@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Gustavo Mendez\Documents\GitHub\UMG-Escuintla\API\ASIST_UMG_api\ASIST_UMG_api\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2025-04-01T21:36:20.3530584Z||;True|2025-04-01T09:20:33.0428570-06:00||;True|2025-04-01T09:13:48.1104426-06:00||;True|2025-04-01T09:03:23.1843899-06:00||;True|2025-04-01T08:33:00.3353369-06:00||;True|2025-04-01T08:27:32.8940342-06:00||;True|2025-04-01T08:26:15.2115945-06:00||;True|2025-04-01T08:25:32.2913518-06:00||;True|2025-03-31T23:45:10.5790917-06:00||;True|2025-03-31T23:41:14.4540438-06:00||;True|2025-03-31T22:53:49.1658747-06:00||;True|2025-03-31T20:16:17.4236159-06:00||;True|2025-03-31T17:21:54.1156598-06:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="Conn_cloud">
+      <Value>Server=localhost%3bPort=5432%3bDatabase=postgres%3bUser Id=postgres%3bPassword=Gu%40malan2025++</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

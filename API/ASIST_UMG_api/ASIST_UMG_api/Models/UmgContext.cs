@@ -49,8 +49,8 @@ public partial class UmgContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseNpgsql("Host=127.0.01;Database=umg;Port=5432;Username=postgres;Password=Des@rrollo2024;");
-
+      //  => optionsBuilder.UseNpgsql("Host=127.0.01;Database=umg;Port=5432;Username=postgres;Password=Des@rrollo2024;");
+      => optionsBuilder.UseNpgsql("Host=127.0.01;Database=postgres;Port=5432;Username=postgres;Password=Gu@temalan2025++;");
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Administrativo>(entity =>
@@ -71,9 +71,9 @@ public partial class UmgContext : DbContext
 
         modelBuilder.Entity<AsignacionCurso>(entity =>
         {
-            entity.HasKey(e => e.IdAsignacion).HasName("Asignacion_Curso_pkey");
+            entity.HasKey(e => e.IdAsignacion).HasName("AsignacionCurso_pkey");
 
-            entity.ToTable("Asignacion_Curso");
+            entity.ToTable("AsignacionCurso");
 
             entity.Property(e => e.IdAsignacion).ValueGeneratedNever();
             entity.Property(e => e.FechaAsignacion).HasColumnType("timestamp without time zone");
@@ -173,9 +173,9 @@ public partial class UmgContext : DbContext
 
         modelBuilder.Entity<HorarioCurso>(entity =>
         {
-            entity.HasKey(e => e.IdHorario).HasName("Horario_Curso_pkey");
+            entity.HasKey(e => e.IdHorario).HasName("HorarioCurso_pkey");
 
-            entity.ToTable("Horario_Curso");
+            entity.ToTable("HorarioCurso");
 
             entity.Property(e => e.IdHorario).ValueGeneratedNever();
 
@@ -211,11 +211,11 @@ public partial class UmgContext : DbContext
 
         modelBuilder.Entity<Login>(entity =>
         {
-            entity.HasKey(e => e.IdLogin).HasName("Login_pkey");
+            entity.HasKey(e => e.CorreoElectronico).HasName("Login_pkey");
 
             entity.ToTable("Login");
 
-            entity.Property(e => e.IdLogin).ValueGeneratedNever();
+            entity.Property(e => e.CorreoElectronico).HasMaxLength(60);
             entity.Property(e => e.Contrasena).HasMaxLength(100);
         });
 
@@ -257,9 +257,9 @@ public partial class UmgContext : DbContext
 
         modelBuilder.Entity<PadreHijo>(entity =>
         {
-            entity.HasKey(e => e.IdPadreHijo).HasName("Padre_Hijo_pkey");
+            entity.HasKey(e => e.IdPadreHijo).HasName("PadreHijo_pkey");
 
-            entity.ToTable("Padre_Hijo");
+            entity.ToTable("PadreHijo");
 
             entity.Property(e => e.IdPadreHijo).HasMaxLength(50);
             entity.Property(e => e.Observacion).HasMaxLength(100);
@@ -277,15 +277,15 @@ public partial class UmgContext : DbContext
             entity.ToTable("Persona");
 
             entity.Property(e => e.IdPersona).ValueGeneratedNever();
-            entity.Property(e => e.CorreoElectronico).HasMaxLength(100);
+            entity.Property(e => e.CorreoElectronico).HasMaxLength(60);
             entity.Property(e => e.PrimerApellido).HasMaxLength(20);
             entity.Property(e => e.PrimerNombre).HasMaxLength(20);
             entity.Property(e => e.SegundoApellido).HasMaxLength(20);
             entity.Property(e => e.SegundoNombre).HasMaxLength(20);
             entity.Property(e => e.Telefono).HasMaxLength(15);
 
-            entity.HasOne(d => d.IdLoginNavigation).WithMany(p => p.Personas)
-                .HasForeignKey(d => d.IdLogin)
+            entity.HasOne(d => d.CorreoElectronicoNavigation).WithMany(p => p.Personas)
+                .HasForeignKey(d => d.CorreoElectronico)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("Reflogin4424");
 
@@ -326,9 +326,9 @@ public partial class UmgContext : DbContext
 
         modelBuilder.Entity<UbicacionCurso>(entity =>
         {
-            entity.HasKey(e => e.IdUbicacion).HasName("Ubicacion_Curso_pkey");
+            entity.HasKey(e => e.IdUbicacion).HasName("UbicacionCurso_pkey");
 
-            entity.ToTable("Ubicacion_Curso");
+            entity.ToTable("UbicacionCurso");
 
             entity.Property(e => e.IdUbicacion).ValueGeneratedNever();
             entity.Property(e => e.Latitud)

@@ -1,5 +1,120 @@
 LA primera migración sí funciona
-Scaffold-DbContext "Host=127.0.01;Database=postgres;Port=5432;Username=postgres;Password=Des@rrollo2024;" Npgsql.EntityFrameworkCore.PostgreSQL -f -o Models 
+Scaffold-DbContext "Host=127.0.01;Database=umg;Port=5432;Username=postgres;Password=Des@rrollo2024;" Npgsql.EntityFrameworkCore.PostgreSQL -f -o Models 
 
 Scaffold-DbContext "host=Server;Database=postgres;Port=5432;UserId=postgres;Password=Gu@temalan2025++;" Npgsql.EntityFrameworkCore.PostgreSQL -o Model
 dotnet ef dbcontext scaffold "host=Server;Database=postgres;Port=5432;UserId=postgres;Password=Gu@temalan2025++;" Npgsql.EntityFrameworkCore.PostgreSQL -o Model
+
+=================================================
+Información server Hostinger
+=================================================
+
+46.202.93.199
+root
+Gu@tem@la2025++
+
+Reiniciar nginx
+systemctl restart nginx
+
+=================================================
+Acceder al Sitio
+=================================================
+http://46.202.93.199:5019/swagger/index.html
+
+=================================================
+Publicar API en nginx
+=================================================
+------------------------------------------------
+Agregar perfil en launchSettings.json
+------------------------------------------------
+  "profiles": {
+    "NewApp": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+------------------------------------------------
+En Program.cs
+------------------------------------------------
+
+Comentar: app.UseHttpsRedirection();
+Agregar: app.UseForwardedHeaders() 
+
+------------------------------------------------
+Crear el servicio:
+------------------------------------------------
+cd /etc/systemd/system
+
+------------------------------------------------
+Editar el servicio:
+------------------------------------------------
+sudo nano NewApp.service
+
+Agregar el siguiente script:
+
+[Unit]
+Description=NewApp
+ 
+[Service]
+WorkingDirectory=/root/NewApp/bin/Release/net6.0/publish/
+ExecStart=/usr/bin/dotnet /root/NewApp/bin/Release/net6.0/publish/NewApp.dll
+Restart=always
+# Restart service after 10 seconds if the dotnet service crashes:
+RestartSec=10
+KillSignal=SIGINT
+SyslogIdentifier=dotnet-NewApp
+User=root
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+ 
+[Install]
+WantedBy=multi-user.target
+
+------------------------------------------------
+Instalar nginx:
+------------------------------------------------
+sudo apt-get -y install nginx certbot python3-certbot-nginx
+
+------------------------------------------------
+Modificar el archivo default:
+------------------------------------------------
+sudo nano /etc/nginx/sites-available/default 
+
+------------------------------------------------
+Agregar nombre al servidor configuración:
+------------------------------------------------
+server_name domain.tld; 
+
+location / {
+    proxy_pass http://localhost:5000;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection keep-alive;
+    proxy_set_header Host $host;
+    proxy_cache_bypass $http_upgrade;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+}
+
+------------------------------------------------
+Instalar SSL certificado:
+------------------------------------------------
+sudo certbot --nginx -d domain.tld
+
+------------------------------------------------
+Reiniciar nginx:
+------------------------------------------------
+nginx -t && nginx -s reload
+
+------------------------------------------------
+Ejecución de contrab:
+------------------------------------------------
+crontab -e
+
+------------------------------------------------
+ auto-renew the SSL every day at 12:00 (noon)
+------------------------------------------------
+0 12 * * * /usr/bin/certbot renew --quiet

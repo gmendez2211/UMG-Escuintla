@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ASIST_UMG_api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4fd132af5142361bede1725fff704662b887af0d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+095645af253ef55bb568c21a2e68ea315581aa9c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ASIST_UMG_api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ASIST_UMG_api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

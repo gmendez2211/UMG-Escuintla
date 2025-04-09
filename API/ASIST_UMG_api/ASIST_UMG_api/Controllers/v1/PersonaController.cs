@@ -5,6 +5,7 @@ using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using ASIST_UMG_api.Models.DTOs.personas;
 using ASIST_UMG_api.Models.DTOs.sedesCentros;
+using ASIST_UMG_api.Models.DTOs.login;
 
 namespace ASIST_UMG_api.Controllers.v1
 {
@@ -41,14 +42,24 @@ namespace ASIST_UMG_api.Controllers.v1
             {
                 return BadRequest(ModelState);
             }
+            cRegistroLoginDto registroLoginDto = new cRegistroLoginDto();
+            
+      
+                // Asignación de valores
+                registroLoginDto.CorreoElectronico = "";
+                registroLoginDto.EstadoUsuario = true;
+                registroLoginDto.Contrasena = "UMG2025@";
+
+            
             var Registro = _mapper.Map<Persona>(registroPersonaDto);
+            var RegistroLogin = _mapper.Map<Login>(registroLoginDto);
 
             if (Registro == null)
             {
                 return NotFound();
             }
 
-            if (!_cPersonas.RegistraPersona(Registro))
+            if (!_cPersonas.RegistraPersona(Registro, RegistroLogin))
             {
                 ModelState.AddModelError("", $"Error al grabar registro de la persona {registroPersonaDto.PrimerNombre}");
                 return StatusCode(500, ModelState);

@@ -5,8 +5,8 @@ namespace ASIST_UMG_api.Models.DTOs
 {
     public class cRegistroMarcajeDto
     {
-        [Required(ErrorMessage = "ID de marcaje es necesario")]
-        public int IdMarcaje { get; set; }
+        //[Required(ErrorMessage = "ID de marcaje es necesario")]
+        //public int IdMarcaje { get; set; }
         [Required(ErrorMessage = "ID de persona es necesario")]
         public int IdPersona { get; set; }
         [Required(ErrorMessage = "ID de curso es necesario")]

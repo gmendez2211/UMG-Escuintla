@@ -53,7 +53,7 @@ namespace ASIST_UMG_api.Controllers.v1
 
             if (!_ctMarcaje.RegistraMarcarje(Registro))
             {
-                ModelState.AddModelError("", $"Error al grabar registro en base de datos {registroMarcajeDto.IdMarcaje}");
+                ModelState.AddModelError("", $"Error al grabar registro de la persona {registroMarcajeDto.IdPersona}");
                 return StatusCode(500, ModelState);
             }
             return Ok();

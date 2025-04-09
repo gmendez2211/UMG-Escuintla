@@ -1,4 +1,5 @@
-﻿using ASIST_UMG_api.Models;
+﻿using ASIST_UMG_api.Funciones;
+using ASIST_UMG_api.Models;
 using ASIST_UMG_api.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
@@ -17,6 +18,7 @@ namespace ASIST_UMG_api.Repository
         {
             try
             {
+                sedes.IdSedeCentro = cGeneracionID.cGeneraID();
                 _dbContext.SedeCentros.Add(sedes);
                 return Save();
             }

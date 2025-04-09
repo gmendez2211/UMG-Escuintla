@@ -4,8 +4,8 @@ namespace ASIST_UMG_api.Models.DTOs.sedesCentros
 {
     public class cRegistroSedeCentroDto
     {
-        [Required(ErrorMessage = "ID del centro es necesario")]
-        public int IdSedeCentro { get; set; }
+        //[Required(ErrorMessage = "ID del centro es necesario")]
+        //public int IdSedeCentro { get; set; }
         [Required(ErrorMessage = "El correo es necesario")]
         public string? CorreoElectronico { get; set; }
         [Required(ErrorMessage = "El teléfono es necesario")]

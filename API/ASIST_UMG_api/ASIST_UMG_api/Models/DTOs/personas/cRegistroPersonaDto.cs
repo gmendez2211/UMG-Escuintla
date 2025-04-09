@@ -5,8 +5,7 @@ namespace ASIST_UMG_api.Models.DTOs.personas;
 
 public class cRegistroPersonaDto
 {
-    public int IdPersona { get; set; }
-
+   
     public int IdSedeCentro { get; set; }
 
     public DateOnly? FechaRegistro { get; set; }

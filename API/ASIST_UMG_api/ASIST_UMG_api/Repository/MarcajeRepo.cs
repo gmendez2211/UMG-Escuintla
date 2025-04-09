@@ -1,4 +1,5 @@
 ﻿using ASIST_UMG_api.Data;
+using ASIST_UMG_api.Funciones;
 using ASIST_UMG_api.Models;
 using ASIST_UMG_api.Models.DTOs;
 using ASIST_UMG_api.Repository.Interfaces;
@@ -55,6 +56,7 @@ namespace ASIST_UMG_api.Repository
         {
             try
             {
+                Regmarcaje.IdMarcaje = cGeneracionID.cGeneraID();
                 _dbContext.Marcajes.Add(Regmarcaje);
                 return Save();
             }

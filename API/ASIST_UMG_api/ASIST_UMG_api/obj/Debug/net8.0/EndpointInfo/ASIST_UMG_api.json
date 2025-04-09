@@ -819,16 +819,11 @@
           "descripcion",
           "fechaFin",
           "fechaInicio",
-          "idCurso",
           "idSedeCentro",
           "nombreCurso"
         ],
         "type": "object",
         "properties": {
-          "idCurso": {
-            "type": "integer",
-            "format": "int32"
-          },
           "idSedeCentro": {
             "type": "integer",
             "format": "int32"
@@ -859,7 +854,6 @@
           "horaFinal",
           "horaInicio",
           "idCurso",
-          "idMarcaje",
           "idPersona",
           "latitud",
           "longitud",
@@ -867,10 +861,6 @@
         ],
         "type": "object",
         "properties": {
-          "idMarcaje": {
-            "type": "integer",
-            "format": "int32"
-          },
           "idPersona": {
             "type": "integer",
             "format": "int32"
@@ -913,10 +903,6 @@
       "cRegistroPersonaDto": {
         "type": "object",
         "properties": {
-          "idPersona": {
-            "type": "integer",
-            "format": "int32"
-          },
           "idSedeCentro": {
             "type": "integer",
             "format": "int32"
@@ -967,16 +953,11 @@
         "required": [
           "correoElectronico",
           "direccion",
-          "idSedeCentro",
           "nombreSede",
           "telefono"
         ],
         "type": "object",
         "properties": {
-          "idSedeCentro": {
-            "type": "integer",
-            "format": "int32"
-          },
           "correoElectronico": {
             "minLength": 1,
             "type": "string"

@@ -1,4 +1,5 @@
-﻿using ASIST_UMG_api.Models;
+﻿using ASIST_UMG_api.Funciones;
+using ASIST_UMG_api.Models;
 using ASIST_UMG_api.Repository.Interfaces;
 
 namespace ASIST_UMG_api.Repository
@@ -37,6 +38,8 @@ namespace ASIST_UMG_api.Repository
         {
             try
             {
+                
+                cursos.IdCurso = cGeneracionID.cGeneraID();
                 _dbContext.Cursos.Add(cursos);
                 return Save();
             }

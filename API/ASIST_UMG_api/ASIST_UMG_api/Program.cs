@@ -20,8 +20,8 @@ var builder = WebApplication.CreateBuilder(args);
 //Conexion a la base de datos
 builder.Services.AddDbContext<UmgContext>(options =>
     // options.UseMySQL(builder.Configuration.GetConnectionString("ConnMysql"), new MysqlServerVersion("8.0.32"));
-   //  options.UseNpgsql(builder.Configuration.GetConnectionString(name: "Conn_local")));
-       options.UseNpgsql(builder.Configuration.GetConnectionString(name: "Conn_cloud")));
+    // options.UseNpgsql(builder.Configuration.GetConnectionString(name: "Conn_local")));
+      options.UseNpgsql(builder.Configuration.GetConnectionString(name: "Conn_cloud")));
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 //builder.Services.AddEndpointsApiExplorer();

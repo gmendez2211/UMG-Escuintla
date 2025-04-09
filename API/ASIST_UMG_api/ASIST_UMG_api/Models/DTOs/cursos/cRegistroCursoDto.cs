@@ -4,8 +4,8 @@ namespace ASIST_UMG_api.Models.DTOs.cursos
 {
     public class cRegistroCursoDto
     {
-        [Required(ErrorMessage = "El ID de curso es Obligatorio.")]
-        public int IdCurso { get; set; }
+        //[Required(ErrorMessage = "El ID de curso es Obligatorio.")]
+        //public int IdCurso { get; set; }
         [Required(ErrorMessage = "El ID del centro es Obligatorio.")]
         public int IdSedeCentro { get; set; }
         [Required(ErrorMessage = "La fecha fin es Obligatoria.")]

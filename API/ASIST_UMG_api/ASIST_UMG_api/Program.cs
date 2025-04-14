@@ -1,5 +1,6 @@
 using ASIST_UMG_api.Data;
 using ASIST_UMG_api.Mappers.Curso;
+using ASIST_UMG_api.Mappers.Facultad;
 using ASIST_UMG_api.Mappers.Marcajes;
 using ASIST_UMG_api.Mappers.Personas;
 using ASIST_UMG_api.Mappers.SedesCentros;
@@ -20,8 +21,21 @@ var builder = WebApplication.CreateBuilder(args);
 //Conexion a la base de datos
 builder.Services.AddDbContext<UmgContext>(options =>
     // options.UseMySQL(builder.Configuration.GetConnectionString("ConnMysql"), new MysqlServerVersion("8.0.32"));
-    // options.UseNpgsql(builder.Configuration.GetConnectionString(name: "Conn_local")));
-      options.UseNpgsql(builder.Configuration.GetConnectionString(name: "Conn_cloud")));
+     options.UseNpgsql(builder.Configuration.GetConnectionString(name: "Conn_local")));
+    //  options.UseNpgsql(builder.Configuration.GetConnectionString(name: "Conn_cloud")));
+
+//Configuracion CORS
+builder.Services.AddCors(p => p.AddPolicy("CORS", options =>
+{
+    options.WithOrigins("http://localhost:5019",
+                        "http://46.202.93.199:5019/",
+                        "http://46.202.93.199:5019"
+                       ).WithMethods("PATCH", "PUT", "GET", "POST").AllowAnyHeader();
+
+}));
+
+
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 //builder.Services.AddEndpointsApiExplorer();
@@ -51,10 +65,13 @@ builder.Services.AddScoped<iMarcajes, MarcajeRepo>();
 
 
 //Automapper
+builder.Services.AddAutoMapper(typeof(cFacultadMapper));
 builder.Services.AddAutoMapper(typeof(cMarcajeMapper));
 builder.Services.AddAutoMapper(typeof(cPersonaMapper));
 builder.Services.AddAutoMapper(typeof(cSedesCentrosMapper));
 builder.Services.AddAutoMapper(typeof(cCursoMapper));
+
+
 
 
 var app = builder.Build();
@@ -62,12 +79,12 @@ var app = builder.Build();
 
 
 // Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors("CORS");
 //app.UseHttpsRedirection();
 app.UseForwardedHeaders();
 

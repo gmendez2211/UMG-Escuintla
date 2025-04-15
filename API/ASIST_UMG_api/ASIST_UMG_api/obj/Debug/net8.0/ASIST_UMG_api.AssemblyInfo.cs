@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ASIST_UMG_api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5011d50dae9eccc284171eab01f3d5c9e8f318f1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c0823a4f57cbd5f728e88b244a060de2594d8ec")]
 [assembly: System.Reflection.AssemblyProductAttribute("ASIST_UMG_api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ASIST_UMG_api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

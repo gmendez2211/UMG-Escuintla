@@ -30,6 +30,9 @@
           }
         },
         "responses": {
+          "200": {
+            "description": "OK"
+          },
           "201": {
             "description": "Created"
           },
@@ -216,6 +219,110 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "/facultades": {
+      "post": {
+        "tags": [
+          "Facultades"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/cRegistroFacultadesDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/cRegistroFacultadesDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/cRegistroFacultadesDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/cRegistroFacultadesDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/cRegistroFacultadesDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/cRegistroFacultadesDto"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/DetalleFacultades": {
+      "get": {
+        "tags": [
+          "Facultades"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/cDetalleCursosDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/cDetalleCursosDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/cDetalleCursosDto"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "401": {
+            "description": "Unauthorized"
           }
         }
       }
@@ -841,6 +948,29 @@
             "type": "string"
           },
           "nombreCurso": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "cRegistroFacultadesDto": {
+        "required": [
+          "descripcion",
+          "idSedeCentro",
+          "nombreFacultad"
+        ],
+        "type": "object",
+        "properties": {
+          "idSedeCentro": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descripcion": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "nombreFacultad": {
             "minLength": 1,
             "type": "string"
           }

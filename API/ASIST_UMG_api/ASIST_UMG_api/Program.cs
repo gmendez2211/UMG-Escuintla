@@ -58,6 +58,7 @@ builder.Services.AddApiVersioning(options =>
 builder.Services.AddSwaggerGen();
 
 //Repositorios
+builder.Services.AddScoped<iFacultades, cFacultadesRepo>();
 builder.Services.AddScoped<iCurso, cCursoRepo>();
 builder.Services.AddScoped<iSedesCentros, cSedesCentrosRepo>();
 builder.Services.AddScoped<iPersonas, PersonaRepo>();

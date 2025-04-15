@@ -9,6 +9,7 @@ namespace ASIST_UMG_api.Mappers.Facultad
         public cFacultadMapper()
         {
             CreateMap<ASIST_UMG_api.Models.Facultad, cRegistroFacultadesDto>().ReverseMap();
+            CreateMap<ASIST_UMG_api.Models.Facultad, cDetalleFacultadesDto>().ReverseMap();
         }
     }
 }

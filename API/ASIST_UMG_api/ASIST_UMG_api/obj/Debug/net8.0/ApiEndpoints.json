@@ -57,6 +57,11 @@
       {
         "Type": "System.Void",
         "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
         "StatusCode": 201
       },
       {
@@ -362,6 +367,82 @@
           "application/json",
           "text/json"
         ],
+        "StatusCode": 401
+      }
+    ]
+  },
+  {
+    "ContainingType": "ASIST_UMG_api.Controllers.v1.FacultadesController",
+    "Method": "listadoSedesCentros",
+    "RelativePath": "DetalleFacultades",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ASIST_UMG_api.Models.DTOs.cursos.cDetalleCursosDto, ASIST_UMG_api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 401
+      }
+    ]
+  },
+  {
+    "ContainingType": "ASIST_UMG_api.Controllers.v1.FacultadesController",
+    "Method": "Facultades",
+    "RelativePath": "facultades",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registroFacultadesDto",
+        "Type": "ASIST_UMG_api.Models.DTOs.facultades.cRegistroFacultadesDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ASIST_UMG_api.Models.DTOs.facultades.cRegistroFacultadesDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
         "StatusCode": 401
       }
     ]

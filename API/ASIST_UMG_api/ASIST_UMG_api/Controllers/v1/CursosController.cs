@@ -25,6 +25,7 @@ namespace ASIST_UMG_api.Controllers.v1
         }
         //Crear Registro de cursos       
         [HttpPost("cursos")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
